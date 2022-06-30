@@ -17,8 +17,6 @@ const FILES_TO_CACHE = [
     './icons/icon-128x128.png',
     './icons/icon-96x96.png',
     './icons/icon-72x72.png',
-    './manifest.webmanifest',
-    './offline.js'
 ];
 // Cache resources
 self.addEventListener('install', function (e) {
@@ -28,6 +26,7 @@ self.addEventListener('install', function (e) {
             return cache.addAll(FILES_TO_CACHE)
         })
     )
+self.skipWaiting();
 });
 //activate service worker and delete outdated cache
 self.addEventListener('activate', function (e) {
