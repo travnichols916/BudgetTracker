@@ -1,6 +1,6 @@
 // create variable to hold db connection
 let db;
-const request = indexedDB.open('budget_tracker', 1);
+const request = indexedDB.open('budget', 1);
 
 // this event will emit if the database version changes
 request.onupgradeneeded = function(event) {
@@ -52,7 +52,7 @@ function uploadTransaction() {
 
         // if there was data in indexedDb's store send it to the api server
         if (getAll.result.length > 0) {
-            fetch('/api/transaction', {
+            fetch('/api/transaction/bulk', {
                 method: 'POST',
                 body: JSON.stringify(getAll.result),
                 headers: {
