@@ -1,21 +1,27 @@
 # BudgetTracker
-<div align="left">
-<img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" alt="JavaScript Badge"/>
+
+
+<div align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5 Badge"/>
+ <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" alt="JavaScript Badge"/>
+ <img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white" alt="NodeJS Badge"/>
+ <img src="https://img.shields.io/badge/Express.js-white?style=flat&logo=express&logoColor=black" alt="ExpressJS Badge"/>
+ <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white" alt="MongoDB Badge"/>
 </div>
 
 
 
-### Heroku
-![Heroku](./assets/.png)
+### Heroku Deployment
+![Heroku](./assets/Screenshot%20(30).png)
 
 
 
 ## Description
 
- * MongoDB is a popular choice for Social Networks due to its speed with large amounts of data and flexibility. 
- * Building an API for a social network web application is where user can share their thoughts, reactions toa  friends thoughts and creating a friend list.
- * Use of date now is used as well as a Utils helper considering the sophistication of the application for accurate formatting and time stamps.
-
+ * Keep track of all the information for keeping track of the budget including adding or subtracting money from the budget.
+ * Building an application that works with or without internet and will cache all data.
+ * Connection with MONGO DB opposed to other databases for more documented oriented operations.
+ * Heroku is a cloud-based platform that helps companies build, deliver, monitor, and scale applications with high velocity.
 
 
 # Table of contents
@@ -30,28 +36,29 @@
 * Mongoose
 * Express
 * Node
-* Insomnia
+* Heroku
 
 
 ## Features
-* GET all users
-* GET a single user by its _id and populated thought and friend data
-* POST a new user
-* PUT to update a user by its _id
-* DELETE to remove user by its _id
+* ServiceWorker allow apps to continue functioning offline in case the user loses internet connection
+* Heroku deployment 
+* MongoDb or document oriented database
+
+
+
 
 ## Usage
 * Installing necessary dependencies including Express, and Mongoose 
 * For developers, run nodemon server.js.
 
 * Screenshots:
-![Update Routes](./assets/getThoughtbyId.png)
-![Belongs to Many-Index Models](./assets/reactionModel.png)
+![Update Routes](./assets/OpenTransaction.png)
+![Belongs to Many-Index Models](./assets/SW.png)
 
 ## Credits
 
 
-* [Travis Nichols](https://github.com/travnichols916/Social-Network-API)
+* [Travis Nichols](https://github.com/travnichols916/BudgetTracker)
 
 
 ## License
